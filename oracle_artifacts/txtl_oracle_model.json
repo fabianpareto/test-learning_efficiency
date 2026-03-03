@@ -1,0 +1,151 @@
+{
+  "model_type": "bagged_ridge_regression",
+  "target": "productivity_mg_mL_hr",
+  "alpha": 0.3,
+  "alpha_input": 0.3,
+  "auto_alpha": false,
+  "cv_alpha_results": [],
+  "bagging": true,
+  "n_bags": 5,
+  "trained_rows": 49,
+  "verified_only": false,
+  "numeric_features": [
+    "Mg_glutamate_mM",
+    "K_glutamate_mM",
+    "DTT_mM",
+    "NTP_multiplier",
+    "PEG_8000_percent",
+    "temperature_C",
+    "plasmid_concentration_nM"
+  ],
+  "categorical_features": [
+    "energy_source",
+    "extract_type",
+    "chaperones",
+    "reaction_mode"
+  ],
+  "preprocessor": {
+    "numeric_impute": {
+      "Mg_glutamate_mM": 6.0,
+      "K_glutamate_mM": 80.0,
+      "DTT_mM": 1.5,
+      "NTP_multiplier": 1.0,
+      "PEG_8000_percent": 2.0,
+      "temperature_C": 29.0,
+      "plasmid_concentration_nM": 7.0
+    },
+    "numeric_mean": {
+      "Mg_glutamate_mM": 7.571428571428571,
+      "K_glutamate_mM": 97.34693877551021,
+      "DTT_mM": 1.4632653061224488,
+      "NTP_multiplier": 1.163265306122449,
+      "PEG_8000_percent": 1.7857142857142858,
+      "temperature_C": 31.20408163265306,
+      "plasmid_concentration_nM": 6.86734693877551
+    },
+    "numeric_std": {
+      "Mg_glutamate_mM": 3.2198364770241845,
+      "K_glutamate_mM": 45.9269833186478,
+      "DTT_mM": 0.2738194530671032,
+      "NTP_multiplier": 0.5089781189118338,
+      "PEG_8000_percent": 1.1248582677159729,
+      "temperature_C": 3.708674838073648,
+      "plasmid_concentration_nM": 3.35147775844444
+    },
+    "categories": {
+      "energy_source": [
+        "3-pga",
+        "maltose",
+        "pep",
+        "pyruvate"
+      ],
+      "extract_type": [
+        "a19",
+        "bl21",
+        "kc6",
+        "missing",
+        "wild-type"
+      ],
+      "chaperones": [
+        "combined",
+        "dnak/dnaj/grpe",
+        "groes/el",
+        "missing",
+        "none"
+      ],
+      "reaction_mode": [
+        "batch",
+        "dialysis/two-stage",
+        "microfluidic",
+        "semi-continuous"
+      ]
+    }
+  },
+  "feature_names": [
+    "Mg_glutamate_mM",
+    "K_glutamate_mM",
+    "DTT_mM",
+    "NTP_multiplier",
+    "PEG_8000_percent",
+    "temperature_C",
+    "plasmid_concentration_nM",
+    "energy_source==3-pga",
+    "energy_source==maltose",
+    "energy_source==pep",
+    "energy_source==pyruvate",
+    "extract_type==a19",
+    "extract_type==bl21",
+    "extract_type==kc6",
+    "extract_type==missing",
+    "extract_type==wild-type",
+    "chaperones==combined",
+    "chaperones==dnak/dnaj/grpe",
+    "chaperones==groes/el",
+    "chaperones==missing",
+    "chaperones==none",
+    "reaction_mode==batch",
+    "reaction_mode==dialysis/two-stage",
+    "reaction_mode==microfluidic",
+    "reaction_mode==semi-continuous"
+  ],
+  "intercept": 0.32460656227416884,
+  "coefficients": [
+    0.05367826716290922,
+    -0.019774553537135826,
+    0.0007328788269064508,
+    -0.007926630534813517,
+    -0.007120461009038737,
+    -0.011140166452263702,
+    -0.0032036875150188624,
+    0.023958496173586447,
+    0.010165210257391777,
+    -0.04780571044919381,
+    0.013682004018215307,
+    0.0031135831169197075,
+    -0.023092144386780814,
+    0.04356389410139703,
+    0.020903327982068266,
+    -0.04448866081360416,
+    0.02853767564826391,
+    0.005450908457569179,
+    -0.0141521157954347,
+    0.031068538239459997,
+    -0.05090500654985876,
+    -0.11344637490927142,
+    0.09742568268394042,
+    -0.05340036447698952,
+    0.06942105670232031
+  ],
+  "prediction_calibration": null,
+  "categorical_normalization": "rule_v1",
+  "metrics_train": {
+    "mae": 0.033437566806003446,
+    "rmse": 0.04813080380530954,
+    "r2": 0.7177004349636604
+  },
+  "metrics_loo": {
+    "mae": 0.05445693624502029,
+    "rmse": 0.0753796477274542,
+    "r2": 0.3075758815765022
+  }
+}
