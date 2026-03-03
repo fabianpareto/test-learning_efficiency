@@ -1,0 +1,205 @@
+{
+  "backgroundColor": "transparent",
+  "color": ["#6369E5", "#5B2D2D", "#D1D8FF"],
+  "textStyle": {
+    "color": "#141414",
+    "fontFamily": "Avenir Next, Avenir, Segoe UI, sans-serif"
+  },
+  "title": {
+    "text": "Replace with chart title",
+    "left": "center",
+    "top": 8,
+    "textStyle": {
+      "fontSize": 20,
+      "fontWeight": "normal",
+      "color": "#141414"
+    }
+  },
+  "legend": {
+    "top": 88,
+    "left": "center",
+    "itemWidth": 34,
+    "itemHeight": 12,
+    "textStyle": {
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "color": "#141414"
+    },
+    "data": ["Series A", "Series B", "Series C"]
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "backgroundColor": "#F8F6F0",
+    "borderColor": "#D1D8FF",
+    "borderWidth": 1,
+    "textStyle": {
+      "color": "#141414",
+      "fontWeight": "normal"
+    },
+    "axisPointer": {
+      "type": "shadow",
+      "shadowStyle": {
+        "color": "rgba(209, 216, 255, 0.35)"
+      }
+    }
+  },
+  "grid": {
+    "left": 100,
+    "right": 30,
+    "top": 150,
+    "bottom": 130
+  },
+  "xAxis": {
+    "type": "category",
+    "position": "bottom",
+    "data": ["Category 1", "Category 2", "Category 3"],
+    "axisTick": {
+      "alignWithLabel": true
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "#141414",
+        "width": 1.25
+      }
+    },
+    "axisLabel": {
+      "show": true,
+      "position": "bottom",
+      "interval": 0,
+      "fontSize": 13,
+      "lineHeight": 16,
+      "margin": 16,
+      "hideOverlap": true,
+      "fontWeight": "normal",
+      "color": "#141414"
+    },
+    "name": "X Axis Label",
+    "nameLocation": "middle",
+    "nameGap": 98,
+    "nameTextStyle": {
+      "fontSize": 17,
+      "color": "#141414",
+      "fontWeight": "normal"
+    }
+  },
+  "yAxis": {
+    "type": "value",
+    "min": 0,
+    "max": 108,
+    "interval": 20,
+    "axisLine": {
+      "lineStyle": {
+        "color": "#141414",
+        "width": 1.25
+      }
+    },
+    "axisLabel": {
+      "formatter": "{value}%",
+      "fontWeight": "normal",
+      "color": "#141414"
+    },
+    "name": "Y Axis Label",
+    "nameLocation": "middle",
+    "nameGap": 70,
+    "nameTextStyle": {
+      "fontSize": 18,
+      "color": "#141414",
+      "fontWeight": "normal"
+    },
+    "splitLine": {
+      "lineStyle": {
+        "type": "dashed",
+        "color": "#D1D8FF",
+        "opacity": 0.75
+      }
+    }
+  },
+  "series": [
+    {
+      "name": "Series A",
+      "type": "bar",
+      "barWidth": 44,
+      "barMaxWidth": 44,
+      "barGap": "20%",
+      "barCategoryGap": "35%",
+      "showBackground": false,
+      "data": [0, 0, 0],
+      "itemStyle": {
+        "color": "#6369E5",
+        "borderRadius": 0
+      },
+      "label": {
+        "show": false
+      }
+    },
+    {
+      "name": "Series B",
+      "type": "bar",
+      "barWidth": 44,
+      "barMaxWidth": 44,
+      "barGap": "20%",
+      "barCategoryGap": "35%",
+      "showBackground": false,
+      "barMinHeight": 5,
+      "data": [
+        {
+          "value": 0,
+          "label": {
+            "show": true,
+            "formatter": "0%",
+            "position": "top",
+            "distance": 2,
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5B2D2D"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "show": true,
+            "formatter": "0%",
+            "position": "top",
+            "distance": 2,
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5B2D2D"
+          }
+        },
+        {
+          "value": 0,
+          "label": {
+            "show": true,
+            "formatter": "0%",
+            "position": "top",
+            "distance": 2,
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5B2D2D"
+          }
+        }
+      ],
+      "itemStyle": {
+        "color": "rgba(91, 45, 45, 0.35)",
+        "borderRadius": 0
+      }
+    },
+    {
+      "name": "Series C",
+      "type": "bar",
+      "barWidth": 44,
+      "barMaxWidth": 44,
+      "barGap": "20%",
+      "barCategoryGap": "35%",
+      "showBackground": false,
+      "data": [0, 0, 0],
+      "itemStyle": {
+        "color": "#D1D8FF",
+        "borderRadius": 0
+      },
+      "label": {
+        "show": false
+      }
+    }
+  ]
+}
